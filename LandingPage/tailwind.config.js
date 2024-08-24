@@ -60,13 +60,14 @@ export default {
       animation: {
         'rotateIn': 'wiggle linear scroll infinite',
       },
+      backgroundImage: {
+        'hero-pattern': "url('background.png')",
+        'body-background': "url('body-background.png')",
+        'gradient-to-left': "url('left-gradient.svg')",
+        'gradient-to-right': "url('right-gradient.svg')",
+      },
     },
-    backgroundImage: {
-      'hero-pattern': "url('background.png')",
-      'body-background': "url('body-background.png')",
-      'gradient-to-left': "url('left-gradient.svg')",
-      'gradient-to-right': "url('right-gradient.svg')",
-    },
+
 
   },
   plugins: [require('daisyui')],
