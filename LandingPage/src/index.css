@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes rotateIn {
+    0% {
+        transform: rotate(10.21deg);
+    }
+
+    80%,
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.scroll-rotate {
+    animation: rotateIn linear;
+    animation-timeline: view();
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.auto-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+}
+
+.hidable {
+    transition: opacity 0.5s ease, height 0.5s ease;
+}
+
+.hidden {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.visible {
+    opacity: 1;
+    height: auto;
+}
