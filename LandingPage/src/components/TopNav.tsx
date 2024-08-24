@@ -49,12 +49,12 @@ export const TopNav = () => {
         </Link>
       </div>
       <div className="flex gap-4">
-        <Button type="outline" onClick={() => console.log("button is clicked")}>
-          Log In
-        </Button>
-        <Button type="fill" onClick={() => console.log("button is clicked")}>
-          Sign Up
-        </Button>
+        <a href="https://flex-car-rental-production.up.railway.app/login">
+          <Button type="outline">Log In</Button>
+        </a>
+        <a href="https://flex-car-rental-production.up.railway.app/signup">
+          <Button type="fill">Sign Up</Button>
+        </a>
       </div>
     </nav>
   );
