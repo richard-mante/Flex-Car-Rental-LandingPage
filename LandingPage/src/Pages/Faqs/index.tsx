@@ -1,5 +1,4 @@
 import { TopNav } from "../../components/TopNav";
-import { Button } from "../../components/widgets/Button";
 import dashboard from "../../assets/dashboard.png";
 import { Question } from "../../components/Question";
 import faqs from "../../data/questions";

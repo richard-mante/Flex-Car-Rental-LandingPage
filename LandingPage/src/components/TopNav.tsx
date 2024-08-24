@@ -1,11 +1,10 @@
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "./widgets/Button";
 import logo from "../assets/logo.png";
-import { useState } from "react";
 
 export const TopNav = () => {
   const location = useLocation();
-  const [currentPath, setcurrentPath] = useState(location.pathname);
+  const currentPath = location.pathname;
 
   const navItems = {
     home: "/",
